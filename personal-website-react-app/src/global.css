@@ -1,0 +1,27 @@
+body {
+  background-color: #EAE0CC; /* forest green: 3D614C */
+  height: 100vh; /* Make the background cover the full viewport height */
+  display: flex;
+  align-items: flex-start;
+}
+
+.links {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  font-family: 'Georgia', serif; 
+  font-size: 40px;
+  font-weight: bold;
+  color: #C9ADA1; /* Text color for links */
+  text-decoration: none;
+  text-align: right;
+  margin-bottom: 10px; /* Adjust the spacing between links */
+}
+
+a:hover {
+  color: #A0A083;
+}
+
