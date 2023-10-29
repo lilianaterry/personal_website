@@ -1,0 +1,19 @@
+.index-image-container {
+  width: 300px; /* Set your desired width here */
+  height: 300px; /* Set your desired height here */
+  overflow: hidden; /* Hide any overflowing content */
+  padding-left: 10px; /* Add padding between images */
+  padding-right: 10px;
+  box-sizing: border-box; /* Include padding in the width */
+}
+
+.index-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Crop the image to cover the container */
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: space-between; /* Distribute space between the images */
+}
