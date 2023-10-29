@@ -1,5 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import "../global.css";
+import "./navigation_bar.css";
 
 function NavigationBar() {
   const navStyle = {
@@ -8,22 +10,44 @@ function NavigationBar() {
   };
 
   return (
-    <nav>
-      <ul style={navStyle}>
-        <li>
-          <Link to="/">Index</Link>
-        </li>
-        <li>
-          <Link to="/process">Process</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
-        <li>
-          <Link to="/contribute">Contribute</Link>
-        </li>
-      </ul>
-    </nav>
+    <div classname="nav-container">
+      <nav>
+        <ul style={navStyle}>
+          <li>
+            <NavLink to="/" className="nav-link" activeClassName="active">
+              Index
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/process"
+              className="nav-link"
+              activeClassName="active"
+            >
+              Process
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/contact"
+              className="nav-link"
+              activeClassName="active"
+            >
+              Contact
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/contribute"
+              className="nav-link"
+              activeClassName="active"
+            >
+              Contribute
+            </NavLink>
+          </li>
+        </ul>
+      </nav>
+    </div>
   );
 }
 

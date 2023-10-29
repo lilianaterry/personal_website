@@ -1,0 +1,22 @@
+.nav-container {
+  width: 200px; /* Set the width of the navigation container */
+  float: left; /* Float it to the left to create a sidebar */
+}
+
+.nav-link {
+  font-family: "Georgia", serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #c9ada1; /* Text color for links */
+  text-decoration: none;
+  text-align: right;
+  margin-bottom: 10px; /* Adjust the spacing between links */
+}
+
+.nav-link:hover {
+  color: #a0a083;
+}
+
+.nav-link.active {
+  color: #d4a08a; /* Change this to your desired active link color */
+}

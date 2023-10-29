@@ -1,11 +1,12 @@
 import React from "react";
 import NavigationBar from "./NavigationBar"; // Import the NavigationBar component
+import "../global.css";
 
 function Contact() {
   return (
-    <div>
+    <div className="page-container">
       <NavigationBar /> {/* Include the NavigationBar */}
-      <div>Contact Page Content</div>
+      <div className="content">Contact Page Content</div>
     </div>
   );
 }

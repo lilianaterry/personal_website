@@ -1,11 +1,12 @@
 import React from "react";
-import NavigationBar from "./NavigationBar"; // Import the NavigationBar component
+import NavigationBar from "./NavigationBar";
+import "../global.css";
 
 function Process() {
   return (
-    <div>
-      <NavigationBar /> {/* Include the NavigationBar */}
-      <div>Process Page Content</div>
+    <div className="page-container">
+      <NavigationBar />
+      <div className="content">Process Page Content</div>
     </div>
   );
 }
