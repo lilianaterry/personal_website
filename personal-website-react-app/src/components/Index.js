@@ -1,9 +1,9 @@
 import React from "react";
 import NavigationBar from "./NavigationBar";
 import "../global.css";
-import lobsterFinal from "../images/mushrooms/lobster/11_final_materials.jpeg";
 import IndexImageContainer from "./IndexImageContainer";
 import "./index_image.css";
+import recipesData from "../data/recipesData";
 
 function Index() {
   return (
@@ -11,18 +11,14 @@ function Index() {
       <NavigationBar />
       <div className="content">
         <div className="image-gallery">
-          <IndexImageContainer
-            src={lobsterFinal}
-            description="wool dyed with lobster mushroom, result purple to pink"
-          />
-          <IndexImageContainer
-            src={lobsterFinal}
-            description="wool dyed with lobster mushroom, result purple to pink"
-          />
-          <IndexImageContainer
-            src={lobsterFinal}
-            description="wool dyed with lobster mushroom, result purple to pink"
-          />
+          {recipesData.map((recipe) => (
+            <IndexImageContainer
+              key={recipe.id} // Ensure each component has a unique key
+              src={recipe.imageSrc}
+              description={recipe.description}
+              to={`/recipes/${recipe.id}`}
+            />
+          ))}
         </div>
       </div>
     </div>

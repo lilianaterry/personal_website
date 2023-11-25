@@ -1,5 +1,4 @@
 import "./global.css";
-
 import React from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 
@@ -7,11 +6,8 @@ import Index from "./components/Index";
 import Process from "./components/Process";
 import Contact from "./components/Contact";
 import Contribute from "./components/Contribute";
-
-import { fairyDustCursor } from "cursor-effects";
-new fairyDustCursor({
-  colors: ["#E35A20", "#FCAD8B", "#C9ADA1", "#C99781"],
-});
+import RecipeDetailPage from "./components/RecipeDetailPage";
+import recipes from "./data/recipesData"; // Import the recipes array
 
 function App() {
   return (
@@ -21,6 +17,10 @@ function App() {
         <Route path="/process" element={<Process />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/contribute" element={<Contribute />} />
+        <Route
+          path="/recipes/:recipeId"
+          element={<RecipeDetailPage recipes={recipes} />}
+        />
       </Routes>
     </Router>
   );
