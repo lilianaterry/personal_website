@@ -2,7 +2,6 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "../global.css";
 import "./navigation_bar.css";
-import { useState } from "react";
 
 import { fairyDustCursor } from "cursor-effects";
 new fairyDustCursor({

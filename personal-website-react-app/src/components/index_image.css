@@ -15,5 +15,13 @@
 
 .image-gallery {
   display: flex;
-  justify-content: space-between; /* Distribute space between the images */
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust gap between grid items */
+}
+
+.image-gallery > div {
+  width: calc(
+    50% - 10px
+  ); /* Set width for each item (50% minus half the gap) */
+  margin-bottom: 20px; /* Optional: Add margin to the bottom of each item */
 }
