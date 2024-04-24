@@ -15,6 +15,7 @@ function Index() {
             <IndexImageContainer
               key={recipe.id} // Ensure each component has a unique key
               src={recipe.imageSrc}
+              hoverSrc={recipe.hoverImageSrc}
               description={recipe.description}
               to={`/recipes/${recipe.id}`}
             />

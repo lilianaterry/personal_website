@@ -7,6 +7,7 @@ const recipes = [
     subtitle: "Hypomyces lactifluorum",
     description: "",
     imageSrc: "/images/mushrooms/lobster/1_original_materials.jpeg",
+    hoverImageSrc: "/images/mushrooms/lobster/11_final_materials.jpeg",
     condition: "fresh or frozen",
     parts: "pits and skins",
     ph: "9 = pink \n 4 = orange",
@@ -21,6 +22,7 @@ const recipes = [
     subtitle: "Hedera helix",
     description: "",
     imageSrc: "/images/plants/english_ivy/englishivy_before.jpg",
+    hoverImageSrc: "/images/plants/english_ivy/englishivy_before.jpg",
   },
   {
     id: "dandelion",
@@ -28,6 +30,7 @@ const recipes = [
     subtitle: "Taraxacum officinale",
     description: "",
     imageSrc: "/images/plants/dandelion/dandelion_before.jpg",
+    hoverImageSrc: "/images/plants/dandelion/dandelion_comparison.jpg",
   },
   {
     id: "avocado",
@@ -35,6 +38,7 @@ const recipes = [
     subtitle: "Persea americana",
     description: "",
     imageSrc: "/images/plants/avocado/avocado_before.jpg",
+    hoverImageSrc: "/images/plants/avocado/avocado_comparison.jpg",
   },
 ];
 

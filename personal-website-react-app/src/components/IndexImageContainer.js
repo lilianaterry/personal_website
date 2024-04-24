@@ -1,12 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./index_image.css";
+import ImageHoverFade from "./ImageHoverFade";
 
-function IndexImageContainer({ src, description, className, to }) {
+function IndexImageContainer({ src, hoverSrc, description, className, to }) {
   return (
     <div className="index-image-container">
       <Link to={to}>
-        <img src={src} alt={description} className={className} />
+        <ImageHoverFade
+          normalImageSrc={src}
+          hoveredImageSrc={hoverSrc}
+          alt={description}
+        />
       </Link>
     </div>
   );
